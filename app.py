@@ -7,15 +7,25 @@ def get_answer(question):
         with open("data.txt", "r") as f:
             data = f.readlines()
     except:
-        return "Data file not found. Please create data.txt."
+        return "Data file not found."
 
     question = question.lower()
 
-    for line in data:
-        if any(word in line.lower() for word in question.split()):
-            return line.strip()
+    best_match = ""
+    max_score = 0
 
-    return "Sorry, I don't have information about that yet."
+    for line in data:
+        line_lower = line.lower()
+        score = sum(1 for word in question.split() if word in line_lower)
+
+        if score > max_score:
+            max_score = score
+            best_match = line.strip()
+
+    if max_score > 0:
+        return best_match
+    else:
+        return "Sorry, I don't have information about that yet."
 
 
 # Streamlit UI
