@@ -1,13 +1,12 @@
 import streamlit as st
 
-
-# Function to get answer from data file
+# Function to get answer
 def get_answer(question):
     try:
         with open("data.txt", "r") as f:
             data = f.readlines()
     except:
-        return "Data file not found."
+        return "Error: data.txt not found"
 
     question = question.lower()
 
@@ -28,25 +27,28 @@ def get_answer(question):
         return "Sorry, I don't have information about that yet."
 
 
-# Streamlit UI
+# UI
 st.title("MHT-CET Chatbot 🎓")
+st.write("Ask anything about MHT-CET")
 
-st.write("Ask any question related to MHT-CET!")
+# Debug
+st.write("DEBUG: App is running")
 
-# Store chat history
 if "messages" not in st.session_state:
     st.session_state.messages = []
 
-# Display previous messages
 for msg in st.session_state.messages:
     st.chat_message(msg["role"]).write(msg["content"])
 
-# Input box
-user_input = st.chat_input("Type your question here...")
+user_input = st.chat_input("Ask your question...")
 
 if user_input:
-    # Show user message
+    st.write("DEBUG: Question received:", user_input)
+
     st.session_state.messages.append({"role": "user", "content": user_input})
     st.chat_message("user").write(user_input)
 
-    # Get
+    reply = get_answer(user_input)
+
+    st.session_state.messages.append({"role": "assistant", "content": reply})
+    st.chat_message("assistant").write(reply)
