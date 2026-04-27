@@ -11,12 +11,11 @@ def load_data():
     except:
         return {}
 
-# Prepare data
 data = load_data()
 questions = list(data.keys())
 answers = list(data.values())
 
-# AI-like response
+# AI-like matching
 def get_answer(user_input):
     user_input = user_input.lower()
 
@@ -35,6 +34,31 @@ def get_answer(user_input):
 st.set_page_config(page_title="MHT-CET AI Chatbot", page_icon="🎓")
 
 st.title("MHT-CET AI Chatbot 🎓")
+st.markdown("### Ask about eligibility, colleges, cutoffs, documents, etc.")
+
+with st.sidebar:
+    st.header("About")
+    st.write("AI-like chatbot for MHT-CET students.")
+
+# Chat memory
+if "messages" not in st.session_state:
+    st.session_state.messages = []
+
+# Display messages
+for msg in st.session_state.messages:
+    st.chat_message(msg["role"]).write(msg["content"])
+
+# Input
+user_input = st.chat_input("Ask your question...")
+
+if user_input:
+    st.session_state.messages.append({"role": "user", "content": user_input})
+    st.chat_message("user").write(user_input)
+
+    response = get_answer(user_input)
+
+    st.session_state.messages.append({"role": "assistant", "content": response})
+    st.chat_message("assistant").write(response)st.title("MHT-CET AI Chatbot 🎓")
 st.markdown("### Ask about eligibility, colleges, cutoffs, documents, etc.")
 
 with st.sidebar:
