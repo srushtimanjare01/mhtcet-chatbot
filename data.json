@@ -1,17 +1,45 @@
 {
-  "eligibility": "Candidate must be an Indian National and should have passed HSC with Physics and Mathematics along with one subject like Chemistry, Biology, or Computer Science. Minimum 45% marks (40% for reserved categories). Must appear in MHT-CET or JEE.",
-  
-  "documents": "Required documents include MHT-CET scorecard, SSC and HSC marksheets, school leaving certificate, domicile certificate, Aadhaar card, passport photos. Additional documents include caste certificate, income certificate, EWS certificate, and gap certificate if applicable.",
-  
-  "reservation": "Reservation includes 13% SC, 7% ST, 19% OBC, total 50%. Additional quotas: Defence 5%, PWD 5%, EWS 10%, Female 30%.",
-  
-  "branches": "Popular engineering branches include Computer Engineering, Information Technology, Mechanical Engineering, Electronics and Telecommunication. Computer and IT are most in demand.",
-  
-  "exam": "MHT-CET exam includes Physics, Chemistry, and Mathematics. There is no negative marking. Mathematics has higher weightage.",
-  
-  "admission": "Admission is done through CAP (Centralized Admission Process) including registration, document verification, and seat allotment.",
-  
-  "colleges": "Top colleges include COEP Pune, VJTI Mumbai, SPIT Mumbai. Good percentile for top colleges is above 95.",
-  
-  "preparation": "Preparation tips include solving previous papers, revising formulas, and studying Maharashtra board books."
+  "eligibility": "To be eligible for MHT-CET, the candidate must be an Indian National and should have passed HSC (12th) with Physics and Mathematics as compulsory subjects along with one of Chemistry, Biology, Biotechnology, or Technical subjects. Minimum 45% marks are required (40% for reserved categories). The candidate must have appeared for MHT-CET or JEE Main.",
+
+  "minimum marks": "Minimum marks required for MHT-CET eligibility is 45% for general category and 40% for reserved categories in HSC (12th).",
+
+  "diploma eligibility": "Candidates who have completed a Diploma in Engineering and Technology with at least 45% marks are also eligible for direct second-year engineering admission.",
+
+  "exam subjects": "MHT-CET exam consists of Physics, Chemistry, and Mathematics subjects. Mathematics has higher weightage compared to Physics and Chemistry.",
+
+  "exam pattern": "MHT-CET is a computer-based test with multiple-choice questions. There is no negative marking. Mathematics carries 100 marks, while Physics and Chemistry carry 50 marks each.",
+
+  "documents required": "Documents required include MHT-CET scorecard, SSC marksheet, HSC marksheet, school leaving certificate, domicile certificate, Aadhaar card, and passport size photographs.",
+
+  "additional documents": "Additional documents may include caste certificate, caste validity certificate, income certificate, EWS certificate, non-creamy layer certificate, and gap certificate if applicable.",
+
+  "domicile": "Domicile certificate is required for Maharashtra candidates to claim state quota benefits.",
+
+  "reservation": "Reservation in MHT-CET includes 13% for SC, 7% for ST, 19% for OBC, and other categories, making total reservation around 50%.",
+
+  "quota": "Special quotas include 5% for Defence candidates, 5% for Persons with Disability (PWD), 10% for EWS category, and 30% reservation for female candidates.",
+
+  "admission process": "Admission is done through CAP (Centralized Admission Process), which includes registration, document verification, merit list, option form filling, and seat allotment.",
+
+  "cap rounds": "CAP rounds are multiple rounds where seats are allotted based on merit and preferences. Candidates can accept or upgrade seats in subsequent rounds.",
+
+  "top colleges": "Top engineering colleges through MHT-CET include COEP Pune, VJTI Mumbai, SPIT Mumbai, and PICT Pune.",
+
+  "cutoff": "For top colleges like COEP and VJTI, a percentile above 95 is generally required. Computer Engineering may require above 98 percentile.",
+
+  "branches": "Popular engineering branches include Computer Engineering, Information Technology, Mechanical Engineering, and Electronics and Telecommunication.",
+
+  "best branch": "Computer Engineering and Information Technology are considered the best branches due to high demand and placement opportunities.",
+
+  "preparation tips": "Preparation tips include solving previous year question papers, revising formulas regularly, focusing on Maharashtra State Board textbooks, and taking mock tests.",
+
+  "syllabus": "MHT-CET syllabus is based on Maharashtra State Board syllabus of Class 11 and 12 for Physics, Chemistry, and Mathematics.",
+
+  "jee vs cet": "All India candidates can apply using JEE Main scores, while Maharashtra candidates primarily use MHT-CET scores for admission.",
+
+  "no negative marking": "There is no negative marking in MHT-CET exam, so students can attempt all questions.",
+
+  "weightage": "Mathematics has double weightage compared to Physics and Chemistry in MHT-CET.",
+
+  "college predictor": "College prediction is based on percentile score. Higher percentile increases chances of getting top colleges like COEP and VJTI."
 }
